@@ -35,8 +35,11 @@ COPY default.conf /etc/nginx/conf.d/
 
 RUN echo "API_PORT=3000" >> /app/.env
 
-EXPOSE 8080
+EXPOSE 8085
 
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
+
+# Start Nginx (default command)
+CMD ["nginx", "-g", "daemon off;"]
