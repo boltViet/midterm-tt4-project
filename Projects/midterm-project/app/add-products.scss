@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap";
+
+.add-product-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    .form-label {
+        font-weight: bold;
+    }
+
+    .input-group-text {
+        background-color: #e9ecef;
+        font-weight: bold;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
